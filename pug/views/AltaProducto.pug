@@ -1,0 +1,26 @@
+extends layouts 
+
+block AltaProducto 
+    form(action="/productos" method="POST") 
+        h1(style="color: blue;")=titulo
+        br
+        label(for="")="Nombre" 
+        br
+        input(type="text" name="Nombre")
+        br
+        label(for="")="Precio" 
+        br
+        input(type="text" name="Precio")
+        br
+        label(for="")="Foto" 
+        br
+        input(type="text" name="Foto")
+        br
+        br
+        br
+        button(type="submit" style="background-color: chartreuse;")="Guardar"
+
+
+
+    
+    

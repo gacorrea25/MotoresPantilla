@@ -1,0 +1,17 @@
+extends layouts 
+
+block listaproductos
+    h2(style="color: crimson;")="Historial"    
+    if results
+        table
+            tr(style="color: rgb(4, 0, 255);")
+                td="Nombre"
+                td="Precio"
+                td="Foto"
+            for Producto in results
+                tr
+                    td=Producto.nombre
+                    td=Producto.precio 
+                    td=Producto.foto 
+    else 
+        h3(class="alert alert-danger")="No se encotro datos"
